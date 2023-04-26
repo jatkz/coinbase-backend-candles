@@ -1,0 +1,14 @@
+[Unit]
+Description=Coinbase Etl to Postgres
+After=network.target
+
+[Service]
+ExecStart=/path/to/my/program
+EnvironmentFile=/path/to/my/env/file
+User=pi
+Group=pi
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
